@@ -6,3 +6,7 @@ Delete Student, Teacher & Class
 Read the list of Students in a division
 Read the list of classes of a teacher.
 Read the divisions of each standard.
+
+Student (name, roll no, & mobile No)
+Teacher (name, employee id, subject)
+Class (standard, division)
