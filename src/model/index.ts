@@ -12,3 +12,7 @@ mongoose.connect("mongodb://localhost:27017/crud", (error: any) => {
 });
 
 const Students = require("./studentModel");
+const Teachers = require("./teacherModel");
+const Classes = require("./classModel");
+
+export {Students,Teachers,Classes};

@@ -8,11 +8,14 @@ import {
 } from "../controller";
 
 const router = express.Router();
+router.route("/").get(getAllTeachers);
 
 router.route("/register").post(createTeacher);
-router.route("/show").get(getAllTeachers);
-router.route("/show/:id").get(getATeacher);
-router.route("/update/:id").post(updateTeacher);
-router.route("/delete/:id").post(deleteTeacher);
+
+router
+  .route("/:id")
+  .get(getATeacher)
+  .patch(updateTeacher)
+  .delete(deleteTeacher);
 
 export default router;

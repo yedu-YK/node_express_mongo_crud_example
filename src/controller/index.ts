@@ -7,10 +7,10 @@ import {
 } from "./teacherController";
 import {
   getAllClasses,
-  getAClass,
+  getAClasses,
   createClass,
-  updateClass,
-  deleteClass,
+  updateClasses,
+  deleteClasses,
 } from "./classController";
 import {
   getAllStudents,
@@ -27,10 +27,10 @@ export {
   updateStudent,
   deleteStudent,
   getAllClasses,
-  getAClass,
+  getAClasses,
   createClass,
-  updateClass,
-  deleteClass,
+  updateClasses,
+  deleteClasses,
   getAllTeachers,
   getATeacher,
   createTeacher,

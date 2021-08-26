@@ -1,18 +1,21 @@
 import express from "express";
 import {
-  getAClass,
+  getAClasses,
   getAllClasses,
   createClass,
-  updateClass,
-  deleteClass,
+  updateClasses,
+  deleteClasses,
 } from "../controller";
 
 const router = express.Router();
+router.route("/").get(getAllClasses);
 
 router.route("/register").post(createClass);
-router.route("/show").get(getAllClasses);
-router.route("/show/:id").get(getAClass);
-router.route("/update/:id").post(updateClass);
-router.route("/delete/:id").post(deleteClass);
+
+router
+  .route("/:id")
+  .get(getAClasses)
+  .patch(updateClasses)
+  .delete(deleteClasses);
 
 export default router;
