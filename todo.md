@@ -1,27 +1,27 @@
 
 Create Student, Teacher & Class 
     routes-*done*
-    controller-empty functions
+    controller-added student
     models
-    db connection
+    db connection added student
 
 Update Student, Teacher & Class
     routes-*done*
-    controller-empty functions
+    controller-added student
     models
-    db connection
+    db connection added student
 
 Delete Student, Teacher & Class
     routes-*done*
-    controller-empty functions
-    db connections
+    controller-added student
+    db connections added student
 
 
 Read the list of Students in a division
 Read the list of classes of a teacher.
 Read the divisions of each standard.
 
-Student (name, roll no, & mobile No)
+Student (name, roll no, & mobile No) - *done*
 Teacher (name, employee id, subject)
 Class (standard, division)
 

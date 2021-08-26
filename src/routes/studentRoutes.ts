@@ -9,10 +9,14 @@ import {
 
 const router = express.Router();
 
+router.route("/").get(getAllStudents);
+
 router.route("/register").post(createStudent);
-router.route("/show").get(getAllStudents);
-router.route("/show/:id").get(getAStudent);
-router.route("/update/:id").post(updateStudent);
-router.route("/delete/:id").post(deleteStudent);
+
+router
+  .route("/:id")
+  .get(getAStudent)
+  .patch(updateStudent)
+  .delete(deleteStudent);
 
 export default router;
