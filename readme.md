@@ -23,3 +23,6 @@
 * /teacher/classes/:id  method = GET get all teachers for class
 * /student/division/:division  method = GET get all students in a division
 * /student/division/:division/:standard  method = GET get all students in a division and standard
+
+##postman api link
+https://www.getpostman.com/collections/26300d73c1b1ca704235
