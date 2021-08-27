@@ -13,7 +13,7 @@ router.route("/").get(getAllClasses);
 
 router.route("/register").post(createClass);
 
-router.route("/division/:id").get(divisionStandard);
+router.route("/division/:standard").get(divisionStandard);
 
 router
   .route("/:id")

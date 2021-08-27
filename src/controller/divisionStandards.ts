@@ -7,7 +7,7 @@ import Classes from "../model/classModel";
 //async function to get all registered classes
 export const divisionStandard = async (req: Request, res: Response) => {
   console.log("get all classes");
-  Classes.find({standard:req.params.id},{division:1})
+  Classes.find({standard:req.params.standard},{division:1})
     .then((classes: any) => {
       res.status(200).send(classes);
     })

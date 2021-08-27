@@ -21,7 +21,7 @@ import {
 } from "./studentController";
 
 import { divisionStandard } from "./divisionStandards";
-
+import { classesTeacher } from "./classesOfTeacher";
 
 export {
   getAllStudents,
@@ -41,4 +41,5 @@ export {
   deleteTeacher,
 
   divisionStandard,
+  classesTeacher
 };

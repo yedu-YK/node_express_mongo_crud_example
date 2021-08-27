@@ -5,12 +5,15 @@ import {
   createTeacher,
   updateTeacher,
   deleteTeacher,
+  classesTeacher,
 } from "../controller";
 
 const router = express.Router();
 router.route("/").get(getAllTeachers);
 
 router.route("/register").post(createTeacher);
+
+router.route("/classes/:id").get(classesTeacher)
 
 router
   .route("/:id")

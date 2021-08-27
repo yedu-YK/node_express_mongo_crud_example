@@ -15,7 +15,7 @@ Class (standard, division) - *done*
 
 
 Read the list of Students in a division
-Read the list of classes of a teacher.
+Read the list of classes of a teacher. *half done*
 Read the divisions of each standard.  *done*
 
 
