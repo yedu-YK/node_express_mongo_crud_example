@@ -22,6 +22,8 @@ import {
 
 import { divisionStandard } from "./divisionStandards";
 import { classesTeacher } from "./classesOfTeacher";
+import { studentDivision,studentsInClass } from "./studentsDivision";
+
 
 export {
   getAllStudents,
@@ -41,5 +43,7 @@ export {
   deleteTeacher,
 
   divisionStandard,
-  classesTeacher
+  classesTeacher,
+  studentDivision,
+  studentsInClass
 };

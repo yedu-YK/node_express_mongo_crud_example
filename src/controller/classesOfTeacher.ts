@@ -8,7 +8,7 @@ import Classes from "../model/classModel";
 
 //async function to get all registered teacher
 export const classesTeacher = async (req: Request, res: Response) => {
-  Teachers.findById(req.params.id)
+  Teachers.findById(req.params.teacher_id)
     .then((teacher: any) => {
       if (!teacher) {
         //validating data

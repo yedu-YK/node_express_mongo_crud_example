@@ -13,7 +13,7 @@ router.route("/").get(getAllTeachers);
 
 router.route("/register").post(createTeacher);
 
-router.route("/classes/:id").get(classesTeacher)
+router.route("/classes/:teacher_id").get(classesTeacher)
 
 router
   .route("/:id")

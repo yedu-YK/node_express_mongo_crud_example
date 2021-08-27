@@ -4,7 +4,6 @@ import { Request, Response } from "express";
 // import Classes from "../model";
 import Classes from "../model/classModel";
 
-
 //async function to get all registered classes
 export const getAllClasses = async (req: Request, res: Response) => {
   console.log("get all classes");
