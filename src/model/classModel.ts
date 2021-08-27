@@ -9,9 +9,15 @@ var ClassSchema = new mongoose.Schema({
   division: {
     type: String,
     required: true,
+    unique:true
   }
 });
 
 const Classes = mongoose.model("Classes", ClassSchema);
 
 export default Classes;
+
+// students: {
+//   type: mongoose.Schema.Types.ObjectId,
+//   ref: "Students",
+// }

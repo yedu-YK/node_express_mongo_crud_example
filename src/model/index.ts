@@ -15,4 +15,4 @@ const Students = require("./studentModel");
 const Teachers = require("./teacherModel");
 const Classes = require("./classModel");
 
-export {Students,Teachers,Classes};
+// export default {Students,Teachers,Classes};

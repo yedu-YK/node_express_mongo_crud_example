@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 
 //importing teachers model
-import {Teachers} from "../model";
+import Teachers from "../model/teacherModel";
 
 //async function to get all registered teacher
 export const getAllTeachers = async (req: Request, res: Response) => {

@@ -20,6 +20,9 @@ import {
   deleteStudent,
 } from "./studentController";
 
+import { divisionStandard } from "./divisionStandards";
+
+
 export {
   getAllStudents,
   getAStudent,
@@ -36,4 +39,6 @@ export {
   createTeacher,
   updateTeacher,
   deleteTeacher,
+
+  divisionStandard,
 };

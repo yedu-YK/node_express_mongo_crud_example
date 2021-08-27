@@ -1,7 +1,9 @@
 import { Request, Response } from "express";
 
 //importing class model
-import {Classes} from "../model";
+// import Classes from "../model";
+import Classes from "../model/classModel";
+
 
 //async function to get all registered classes
 export const getAllClasses = async (req: Request, res: Response) => {

@@ -14,6 +14,10 @@ var StudentSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  class: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Classes",
+  },
 });
 
 const students = mongoose.model("Students", StudentSchema);
