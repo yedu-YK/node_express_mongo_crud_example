@@ -14,10 +14,12 @@ var TeacherSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  class: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Classes",
-  }],
+  class: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Classes",
+    },
+  ],
 });
 
 const teacher = mongoose.model("Teachers", TeacherSchema);

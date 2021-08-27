@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 
 //! Read the list of classes of a teacher.
 
-//importing teachers model
+//importing  model
 import Teachers from "../model/teacherModel";
 import Classes from "../model/classModel";
 
@@ -15,6 +15,7 @@ export const classesTeacher = async (req: Request, res: Response) => {
         res.status(400).send({ message: "cannot find user by this id" });
       }
       const class_id: string = teacher.class.toString();
+      //finding classes by using ids
       Classes.findById(class_id, {
         standard: 1,
         division: 1,

@@ -1,13 +1,13 @@
 import { Request, Response } from "express";
 
-//importing class model
+//importing  model
 import Classes from "../model/classModel";
 import Students from "../model/studentModel";
 
 //async function to get all registered classes
 export const studentDivision = async (req: Request, res: Response) => {
-  console.log("get all classes", req.params.division_id);
-  Classes.findOne({ division: req.params.division_id.toUpperCase() })
+  console.log("get students in aa division called", req.params.division_id);
+  Classes.findOne({ division: req.params.division_id })
     .then((classes: any) => {
       console.log(typeof classes);
       console.log(classes);
@@ -25,7 +25,7 @@ export const studentDivision = async (req: Request, res: Response) => {
 };
 
 export const studentsInClass = async (req: Request, res: Response) => {
-  console.log("get all classes", req.params);
+  console.log("get students in class by division and standard", req.params);
   Classes.findOne({
     standard: req.params.standard_id,
     division: req.params.division_id,

@@ -1,3 +1,6 @@
+
+//module for class controller
+
 import { Request, Response } from "express";
 
 //importing class model
@@ -7,6 +10,7 @@ import Classes from "../model/classModel";
 //async function to get all registered classes
 export const getAllClasses = async (req: Request, res: Response) => {
   console.log("get all classes");
+  //find all class
   Classes.find({})
     .then((classes: any) => {
       res.status(200).send(classes);

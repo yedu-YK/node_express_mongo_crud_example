@@ -1,3 +1,6 @@
+//index file for controller
+
+//importing functions
 import {
   getAllTeachers,
   getATeacher,
